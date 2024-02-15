@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:VORL-TRANS-ITM-{DD}.{MM}.{YY}-{##}",
+ "creation": "2024-01-11 14:47:51.683616",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "transkation_section",
+  "betrag",
+  "tag",
+  "column_break_wdcq",
+  "source",
+  "dest",
+  "notizen_tab",
+  "notizen_section",
+  "notizen"
+ ],
+ "fields": [
+  {
+   "fieldname": "betrag",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Betrag",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transkation_section",
+   "fieldtype": "Section Break",
+   "label": "Transkation - Vorlage"
+  },
+  {
+   "fieldname": "column_break_wdcq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Von Kategorie",
+   "options": "Kategorie",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dest",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Nach Kategorie",
+   "options": "Kategorie",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notizen_tab",
+   "fieldtype": "Tab Break",
+   "label": "Notizen"
+  },
+  {
+   "fieldname": "notizen_section",
+   "fieldtype": "Section Break",
+   "label": "Notizen"
+  },
+  {
+   "fieldname": "notizen",
+   "fieldtype": "Text Editor",
+   "label": "Notizen"
+  },
+  {
+   "fieldname": "tag",
+   "fieldtype": "Int",
+   "label": "Tag der Transaktion",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-18 15:33:24.442140",
+ "modified_by": "Administrator",
+ "module": "Coin Compass",
+ "name": "Vorlage Transaktion Item",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

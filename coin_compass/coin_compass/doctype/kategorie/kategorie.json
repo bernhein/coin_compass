@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:KAT-{kategorie_name}-{MM}.{YY}-{##}\t",
+ "creation": "2023-12-27 21:24:48.077242",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_uyn5",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_budget",
+  "kategorie_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_uyn5",
+   "fieldtype": "Section Break",
+   "label": "Kategorie"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Kategorie"
+  },
+  {
+   "fieldname": "parent_budget",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Kategorie",
+   "options": "Kategorie"
+  },
+  {
+   "fieldname": "kategorie_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kategorie Name",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-01-11 15:25:41.936322",
+ "modified_by": "Administrator",
+ "module": "Coin Compass",
+ "name": "Kategorie",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_budget",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "kategorie_name",
+ "track_changes": 1
+}

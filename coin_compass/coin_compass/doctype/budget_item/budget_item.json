@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{budget_name}-{DD}.{MM}.{YY}-{##}",
+ "creation": "2023-12-30 21:49:33.596419",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "budget_name",
+  "betrag",
+  "column_break_poxl",
+  "von_budget",
+  "restbudget"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "betrag",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Betrag",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_poxl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "von_budget",
+   "fieldtype": "Link",
+   "label": "Von Budget",
+   "options": "Budget",
+   "reqd": 1
+  },
+  {
+   "fieldname": "restbudget",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Restbudget"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-19 21:09:03.089684",
+ "modified_by": "Administrator",
+ "module": "Coin Compass",
+ "name": "Budget Item",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

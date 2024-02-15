@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:VORL-AUS-ITM-{DD}.{MM}.{YY}-{##}",
+ "creation": "2024-01-11 14:05:28.086592",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ausgabenvorlage",
+  "betrag",
+  "kategorie",
+  "recipient",
+  "verwendungszweck",
+  "column_break_ufye",
+  "budget",
+  "tag"
+ ],
+ "fields": [
+  {
+   "fieldname": "ausgabenvorlage",
+   "fieldtype": "Section Break",
+   "label": "Ausgaben - Vorlage"
+  },
+  {
+   "fieldname": "betrag",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Betrag",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kategorie",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Von Kategorie",
+   "options": "Kategorie",
+   "reqd": 1
+  },
+  {
+   "fieldname": "recipient",
+   "fieldtype": "Data",
+   "label": "Empf\u00e4nger"
+  },
+  {
+   "fieldname": "verwendungszweck",
+   "fieldtype": "Small Text",
+   "label": "Verwendungszweck"
+  },
+  {
+   "fieldname": "column_break_ufye",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Link",
+   "label": "Budget",
+   "options": "Budget",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tag",
+   "fieldtype": "Int",
+   "label": "Tag der Abbuchung",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-18 15:31:09.023343",
+ "modified_by": "Administrator",
+ "module": "Coin Compass",
+ "name": "Vorlage Ausgabe Item",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

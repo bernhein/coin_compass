@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:TRANS-ITM-{DD}.{MM}.{YY}-{##}",
+ "creation": "2023-12-30 21:28:35.627484",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "transaktion_section",
+  "betrag",
+  "datum",
+  "column_break_zami",
+  "source",
+  "dest",
+  "sonstiges_tab",
+  "sonstiges_section",
+  "notizen"
+ ],
+ "fields": [
+  {
+   "fieldname": "transaktion_section",
+   "fieldtype": "Section Break",
+   "label": "Transaktion"
+  },
+  {
+   "fieldname": "betrag",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Betrag",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "datum",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Datum",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zami",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Von Kategorie",
+   "options": "Kategorie",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dest",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Nach Kategorie",
+   "options": "Kategorie",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sonstiges_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sonstiges"
+  },
+  {
+   "fieldname": "sonstiges_section",
+   "fieldtype": "Section Break",
+   "label": "Sonstiges"
+  },
+  {
+   "fieldname": "notizen",
+   "fieldtype": "Text Editor",
+   "label": "Notizen"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-30 21:37:03.460898",
+ "modified_by": "Administrator",
+ "module": "Coin Compass",
+ "name": "Transaktion Item",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

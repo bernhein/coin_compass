@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:vorlage_name",
+ "creation": "2024-01-11 15:04:24.097908",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vorlage_section",
+  "vorlage_name",
+  "tbl_einnahme",
+  "tbl_transaktion",
+  "tbl_ausgabe"
+ ],
+ "fields": [
+  {
+   "fieldname": "vorlage_section",
+   "fieldtype": "Section Break",
+   "label": "Vorlage"
+  },
+  {
+   "fieldname": "tbl_einnahme",
+   "fieldtype": "Table",
+   "label": "Einnahmen",
+   "options": "Vorlage Einnahme Item"
+  },
+  {
+   "fieldname": "tbl_transaktion",
+   "fieldtype": "Table",
+   "label": "Transaktionen",
+   "options": "Vorlage Transaktion Item"
+  },
+  {
+   "fieldname": "tbl_ausgabe",
+   "fieldtype": "Table",
+   "label": "Ausgaben",
+   "options": "Vorlage Ausgabe Item"
+  },
+  {
+   "fieldname": "vorlage_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-11 16:04:33.435784",
+ "modified_by": "Administrator",
+ "module": "Coin Compass",
+ "name": "Vorlage",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "vorlage_name",
+ "track_changes": 1
+}

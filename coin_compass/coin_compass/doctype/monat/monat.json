@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Monat-{MM}.{YY}-{##}",
+ "creation": "2023-12-30 07:06:35.328968",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "uebersicht",
+  "startbetrag",
+  "endbetrag",
+  "column_break_szyv",
+  "monat_davor",
+  "monat",
+  "monat_danach",
+  "start_endbetrag",
+  "tbl_kategorie",
+  "geldfluss_tab",
+  "geldfluss",
+  "tbl_einnahme",
+  "tbl_ausgabe",
+  "tbl_transaktion",
+  "budget_tab",
+  "budgets_section",
+  "tbl_budget"
+ ],
+ "fields": [
+  {
+   "fieldname": "uebersicht",
+   "fieldtype": "Section Break",
+   "label": "\u00dcbersicht"
+  },
+  {
+   "fieldname": "startbetrag",
+   "fieldtype": "Currency",
+   "is_virtual": 1,
+   "label": "Startbetrag"
+  },
+  {
+   "fieldname": "endbetrag",
+   "fieldtype": "Currency",
+   "is_virtual": 1,
+   "label": "Endbetrag"
+  },
+  {
+   "fieldname": "column_break_szyv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_endbetrag",
+   "fieldtype": "Section Break",
+   "label": "Start- & Endbetrag"
+  },
+  {
+   "fieldname": "geldfluss",
+   "fieldtype": "Section Break",
+   "label": "Geldfluss"
+  },
+  {
+   "fieldname": "budgets_section",
+   "fieldtype": "Section Break",
+   "label": "Budgets"
+  },
+  {
+   "fieldname": "tbl_budget",
+   "fieldtype": "Table",
+   "label": "Budget",
+   "options": "Budget Item"
+  },
+  {
+   "fieldname": "monat_davor",
+   "fieldtype": "Link",
+   "label": "Monat davor",
+   "options": "Monat"
+  },
+  {
+   "fieldname": "monat_danach",
+   "fieldtype": "Link",
+   "label": "Monat danach",
+   "options": "Monat"
+  },
+  {
+   "fieldname": "geldfluss_tab",
+   "fieldtype": "Tab Break",
+   "label": "Geldfluss"
+  },
+  {
+   "fieldname": "budget_tab",
+   "fieldtype": "Tab Break",
+   "label": "Budget"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "tbl_einnahme",
+   "fieldtype": "Table",
+   "label": "Einnahmen",
+   "options": "Einnahme Item"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "tbl_ausgabe",
+   "fieldtype": "Table",
+   "label": "Ausgaben",
+   "options": "Ausgabe Item"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "tbl_transaktion",
+   "fieldtype": "Table",
+   "label": "Transaktionen",
+   "options": "Transaktion Item"
+  },
+  {
+   "fieldname": "monat",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Monat",
+   "options": "Jan\nFeb\nMar\nApr\nMai\nJun\nJul\nAug\nSep\nOkt\nNov\nDez",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tbl_kategorie",
+   "fieldtype": "Table",
+   "label": "Start- & Endbetrag",
+   "options": "Kategorie Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-22 20:30:36.237886",
+ "modified_by": "Administrator",
+ "module": "Coin Compass",
+ "name": "Monat",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

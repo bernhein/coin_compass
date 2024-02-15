@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:EIN-ITM-{DD}.{MM}.{YY}-{##}",
+ "creation": "2023-12-30 21:18:55.539827",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "einnahme_section",
+  "betrag",
+  "kategorie",
+  "datum",
+  "column_break_xror",
+  "von",
+  "pdf",
+  "sonstiges_tab",
+  "sonstiges_section",
+  "notizen"
+ ],
+ "fields": [
+  {
+   "fieldname": "einnahme_section",
+   "fieldtype": "Section Break",
+   "label": "Einnahme"
+  },
+  {
+   "fieldname": "betrag",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Betrag",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kategorie",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kategorie",
+   "options": "Kategorie",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datum",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Datum",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pdf",
+   "fieldtype": "Attach",
+   "label": "PDF"
+  },
+  {
+   "fieldname": "column_break_xror",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "von",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Von",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notizen",
+   "fieldtype": "Text Editor",
+   "label": "\u00b4"
+  },
+  {
+   "fieldname": "sonstiges_tab",
+   "fieldtype": "Tab Break",
+   "label": "Notizen"
+  },
+  {
+   "fieldname": "sonstiges_section",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-11 14:39:52.178154",
+ "modified_by": "Administrator",
+ "module": "Coin Compass",
+ "name": "Einnahme Item",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
